@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/formScript.js">  </script>
+
+  </head>
+
+  <body id="formBody">
+
+    <!-- Header + Horizontal bar
+    ===================================-->
+    <div id="divNavBar">
+      <a href="index.html" id="logoLink">
+        <img id ="logo" src="img/logo.png" alt="logo">
+        <h1 id="headerTitle">Alphalight</h1>
+      </a>
+
+      <ul id="navUl">
+        <li><a href="page1.html">Page 1</a></li>
+        <li><a href="page2.html">Page 2</a></li>
+        <li><a href="page3.html">Page 3</a></li>
+        <li><a href="page4.html">Page 4</a></li>
+        <li><a href="privacyPolicy.html">Privacy Policy</a></li>
+        <li><a href="termsOfUse.html">Terms of Use</a></li>
+      </ul>
+    </div>
+
+    <h1 id="formH1">Bank account details</h1>
+
+    <div id="form">
+      <form name="myForm" action="second.html" onsubmit="return login()" method="post">
+        <input type="text" id="bankName" class="feedback-input" placeholder="Name of bank" />
+        <input type="text" id="accName" class="feedback-input" placeholder="Account name" />
+        <input type="text" id="ibNumber" class="feedback-input" placeholder="IBAN" />
+        <input type="text" id="swiftBic" class="feedback-input" placeholder="SWIFT, BIC" />
+        <input type="text" id="currency" class="feedback-input" placeholder="Currency" />
+
+        <textarea class="feedback-input" placeholder="Comment"></textarea>
+        <input type="submit" value="SUBMIT"/>
+        <input type="reset" value="RESET"/>
+      </form>
+    </div>
+
+
+    <form id="logoutForm" action="second.html" onsubmit="return logout()">
+      <h1 id="txtMessage"></h1>
+      <input type="submit" value="Return"/>
+    </form>
+
+
+
+
+
+
+  </body>
+</html>
